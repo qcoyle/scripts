@@ -7,9 +7,12 @@
 - Modules should have short, all-lowercase names. Underscores can be used in the module name if it improves readability.
 - Python packages should also have short, all-lowercase names, although the use of underscores is discouraged
 
-## To run python scripts in Visual Studio
+## To run python scripts in Visual Studio Code
 - Download visual studio
+- Update `settings.json`:
+  - Set `"python": "python3 -u"` (if your system requires this - most MacOS do)
+  - Add `"python.terminal.executeInFileDir": true,`
+  - Add `"code-runner.fileDirectoryAsCwd": true` (if using code runner)
+  - Save file
 - Open `.py` file in visual studio
 - Click play button on top bar
-
-- To make sure the play button runs script using python 3, open `settings.json` and set: `"python": "python3 -u"`
