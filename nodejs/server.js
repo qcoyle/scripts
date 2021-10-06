@@ -1,0 +1,18 @@
+// https://kinsta.com/blog/nodejs-vs-python/#:~:text=Hello%20World%20In%20Node.js
+
+const http = require('http');
+const hostname = '127.0.0.1';
+const port = 3000;
+
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World! Welcome to Node.js');
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});
+
+// $ node server.js
+// Open http://localhost:3000 in browser
