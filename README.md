@@ -17,3 +17,13 @@
   - Save file
 - Open `.py` file in visual studio
 - Click play button on top bar
+
+<br>
+
+## JS Conventions
+### See [MDN Guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines)
+* Files (modules): Use either PascalCase or kebab-case
+  * PascalCase is more common for frontend JS applications (i.e. React components)
+  * kebab-case is more common for backend applications. This is because operating systems can handle PascalCase wrongly, leading to bugs
+* Packages
+  * kebab-case
