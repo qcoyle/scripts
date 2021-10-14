@@ -9,5 +9,8 @@ exec("ls -la", (error, stdout, stderr) => {
         console.log(`stderr: ${stderr}`);
         return;
     }
-    console.log(`stdout: ${stdout}`);
+
+    output = stdout;
+    console.log(output);
+    console.log(typeof(output));
 });
