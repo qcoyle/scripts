@@ -16,17 +16,4 @@ const mySort = (object, sortKey) => {
     })
 }
 
-// Note: second way to do it using currying
-const curriedSort = object => sortKey => {
-    return object.sort((a, b) => {
-        return b[sortKey] - a[sortKey];
-    });
-}
-
 console.log(mySort(players, "age")); // Returns desired result
-console.log(mySort(players)); // Returns the array unsorted. No error message
-console.log(mySort(players, "agr")) // Returns the array unsorted. No error message
-
-console.log(curriedSort(players)("age")); // Returns desired result
-console.log(curriedSort(players)); // Returns undefined
-console.log(curriedSort(players)("agr")); // Returns the array unsorted. No error message
